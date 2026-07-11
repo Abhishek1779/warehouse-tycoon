@@ -376,9 +376,6 @@ class TemplateBank:
 st.set_page_config(page_title="Warehouse Tycoon", page_icon="🏢", layout="centered")
 
 # Initialize Session State Variables (so data isn't lost on button clicks)
-if 'page' not in st.session_state:
-    st.session_state.page = 'registration'
-    init_db() # Run database setup once
 if 'score' not in st.session_state:
     st.session_state.score = 0
 if 'q_num' not in st.session_state:
